@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="./js/index.js"></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -26,14 +28,14 @@
         to help us improve our offering!</p>
 
       <div class="ratings">
-        <button class="rate-btn" onclick="console.log(1)"><p>1</p></button>
-        <button class="rate-btn" onclick="console.log(2)"><p>2</p></button>
-        <button class="rate-btn" onclick="console.log(3)"><p>3</p></button>
-        <button class="rate-btn" onclick="console.log(4)"><p>4</p></button>
-        <button class="rate-btn" onclick="console.log(5)"><p>5</p></button>
+        <button class="asd" onclick="updateRating(1)"><p>1</p></button>
+        <button onclick="updateRating(2)"><p>2</p></button>
+        <button onclick="updateRating(3)"><p>3</p></button>
+        <button onclick="updateRating(4)"><p>4</p></button>
+        <button onclick="updateRating(5)"><p>5</p></button>
       </div>
 
-      <button class="submit"><p>SUBMIT</p></button>
+      <button class="submit" onclick="changeCard()"><p>SUBMIT</p></button>
     </div>
 
     <div class="card thanks">
@@ -46,13 +48,5 @@
         don't hesitate to get in touch!</p>
     </div>
   </main>
-  
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.linkedin.com/in/fernando-vald%C3%A9s-garc%C3%ADa-a46142221/">Fernando Valdés García
-      </a>.
-    </div>
-  </footer>
 </body>
 </html>

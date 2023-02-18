@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700');
+
+:root {
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: 'Overpass';
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.star {
+    background-color: hsl(218, 16%, 23%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+    font-size: 27px;
+    margin: 30px 0 20px;
+}
+
+p.normal {
+    color: var(--light-grey);
+    line-height: 1.5;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.ratings button {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(218, 16%, 23%);
+    border: none;
+    border-radius: 50%;
+    color: var(--medium-grey);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Overpass';
+}
+
+.submit {
+    width: 100%;
+    height: 45px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Overpass';
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.thanks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.thanks h1 {
+    margin: 10px 0 0;
+}
+
+.selected {
+    background-color: hsl(218, 16%, 23%);
+    color: orange;
+    padding: 10px 15px 8px;
+    border-radius: 25px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+footer {
+    margin-top: 15px;
+}

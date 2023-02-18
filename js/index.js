@@ -27,6 +27,10 @@ function changeCard() {
     firstCard.style.transform = 'translate(-50%, -50%) scale(1.5, 1.5)';
     firstCard.style.opacity = 0;
 
+    setTimeout(() => {
+        firstCard.style.display = 'none';
+    }, 200)
+
     var secondCard = document.querySelector(".thanks");
     secondCard.style.display = 'flex';
 

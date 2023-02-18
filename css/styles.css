@@ -62,6 +62,13 @@ p.normal {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Overpass';
+    cursor: pointer;
+    transition: color,background-color 0.2s ease-in-out;
+}
+
+.ratings button:hover {
+    background-color: var(--orange);
+    color: white;
 }
 
 .submit {
@@ -76,6 +83,13 @@ p.normal {
     font-family: 'Overpass';
     margin-top: 15px;
     letter-spacing: 3px;
+    cursor: pointer;
+    transition: color,background-color 0.2s ease-in-out;
+}
+
+.submit:hover {
+    background-color: white;
+    color: var(--orange);
 }
 
 .thanks {
